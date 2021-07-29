@@ -24,8 +24,6 @@ namespace Calculator
 
             // END //
 
-            // Part Two - Squares // 
-
             // Add an option asking the user whether to multiply (previous case) or
             // square the numbers being passed in. If the user chooses square, each
             // number in the list should be multiplied by itself and then returned as a comma separated list.
@@ -42,8 +40,14 @@ namespace Calculator
             var userInput = Console.ReadLine();
 
 
+            // creates a switch case that is passed int he value the user chooses // 
+
             switch (programResponse)
 
+            // Declares case for possible user input // 
+            // int.Parse method converts the string representation
+            // of a number to its 32 - bit signed integer equivalent //
+            // double - used to define numeric variables holding numbers with decimal points //
             {
                 case "^":
                     var squared = userInput.Split(",");
